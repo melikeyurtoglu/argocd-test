@@ -13,7 +13,7 @@ spec:
         app: argocd-test
     spec:
       containers:
-      - name: argocd-test-1
-        image: localhost:8084/argocd-test:latest
+      - name: argocd-test
+        image: argocd-test:latest
         ports:
         - containerPort: 5000
