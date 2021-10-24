@@ -12,8 +12,11 @@ spec:
       labels:
         app: argocd-test
     spec:
+    spec:
       containers:
       - name: argocd-test
-        image: argocd-test:latest
+        image: localhost:8083/argocd-test:latest
         ports:
         - containerPort: 5000
+      imagePullSecrets:
+        - name: nexuscredential
