@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: argocd-test
-        image: localhost:8083/argocd-test:latest
+        image: localhost:8084/argocd-test:latest
         ports:
         - containerPort: 5000
